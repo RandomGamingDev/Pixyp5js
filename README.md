@@ -1,5 +1,5 @@
 # Pixyp5js
-Pixy from Wireframe, but for p5js
+Pixy (Credit to Nyaaborn for the name, you can find his github here: https://github.com/Nyaaboron) from Wireframe, but for p5js
 
 Pixyp5js is a version of [Pixy](https://github.com/RandomGamingDev/Wireframe/blob/main/Extensions/Pixy.h) (which is for the [Wireframe](https://github.com/RandomGamingDev/Wireframe)), but for p5js!
 
