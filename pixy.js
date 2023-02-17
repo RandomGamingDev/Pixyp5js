@@ -4,6 +4,7 @@ class Pixy {
     this.size = size;
     this.res = res;
     this.img = createImage(res[0], res[1]);
+    this.loadPixels();
   }
   
   loadPixels() {
