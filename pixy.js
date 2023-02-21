@@ -11,9 +11,12 @@ class Pixy {
     this.img.loadPixels();
   }
   
+  updatePixels() {
+    this.img.updatePixels();
+  }
+  
   setPixel(loc, col) {
     this.img.set(loc[0], loc[1], col);
-    this.img.updatePixels();
   }
   
   display() {
