@@ -16,7 +16,7 @@ class Pixy {
   }
   
   getPixel(loc) {
-    this.img.get(loc[0], loc[1]);
+    return this.img.get(loc[0], loc[1]);
   }
   
   setPixel(loc, col) {
