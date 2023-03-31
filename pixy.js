@@ -16,7 +16,8 @@ class Pixy {
   }
   
   getPixel(loc) {
-    return this.img.get(loc[0], loc[1]);
+    const startLoc = (loc[1] * this.res[0] + loc[0]) * 4;
+    return this.img.pixels.slice(startLoc, startLoc + 4);
   }
   
   setPixel(loc, col) {
