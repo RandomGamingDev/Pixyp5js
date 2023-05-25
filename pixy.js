@@ -1,10 +1,11 @@
 class Pixy {
-  constructor(off, size, res) {
+  constructor(off, size, res, rdr = window) {
     this.off = off;
     this.size = size;
     this.res = res;
     this.img = createImage(res[0], res[1]);
     this.loadPixels();
+    this.rdr = rdr;
   }
   
   loadPixels() {
@@ -38,6 +39,6 @@ class Pixy {
   }
   
   display() {
-      image(this.img, this.off[0], this.off[1], this.size[0], this.size[1]);
+      this.rdr.image(this.img, this.off[0], this.off[1], this.size[0], this.size[1]);
   }
 }
