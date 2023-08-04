@@ -1,11 +1,12 @@
-class Pixy {
-  constructor(off, size, res, rdr = window) {
+ass Pixy {
+  constructor(off, size, res, rdr = window, canvas = _renderer) {
     this.off = off;
     this.size = size;
     this.res = res;
     this.img = createImage(res[0], res[1]);
     this.loadPixels();
     this.rdr = rdr;
+    this.canvas = this.canvas;
   }
   
   loadPixels() {
@@ -14,6 +15,10 @@ class Pixy {
   
   updatePixels() {
     this.img.updatePixels();
+  }
+  
+  setInterpolation(min, mag) {
+    this.canvas.getTexture(this.img).setInterpolation(min, mag);
   }
   
   getPixel(loc) {
