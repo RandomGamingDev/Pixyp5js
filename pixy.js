@@ -1,4 +1,4 @@
-ass Pixy {
+class Pixy {
   constructor(off, size, res, rdr = window, canvas = _renderer) {
     this.off = off;
     this.size = size;
