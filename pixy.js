@@ -6,7 +6,7 @@ class Pixy {
     this.img = createImage(res[0], res[1]);
     this.loadPixels();
     this.rdr = rdr;
-    this.canvas = this.canvas;
+    this.canvas = canvas;
   }
   
   loadPixels() {
