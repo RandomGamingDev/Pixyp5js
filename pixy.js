@@ -46,4 +46,9 @@ class Pixy {
   display() {
       this.rdr.image(this.img, this.off[0], this.off[1], this.size[0], this.size[1]);
   }
+
+  shaderDisp(shad) {
+    shad.setUniform("uSampler", this.img);
+    rect(this.off[0], this.off[1], this.size[0], this.size[1]);
+  }
 }
