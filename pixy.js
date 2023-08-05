@@ -1,9 +1,9 @@
 class Pixy {
-  constructor(off, size, res, rdr = window, canvas = _renderer) {
+  constructor(off, size, res, img = createImage(res[0], res[1]), rdr = window, canvas = _renderer) {
     this.off = off;
     this.size = size;
     this.res = res;
-    this.img = createImage(res[0], res[1]);
+    this.img = img;
     this.loadPixels();
     this.rdr = rdr;
     this.canvas = canvas;
